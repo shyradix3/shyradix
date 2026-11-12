@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>성혜정의 포트폴리오</title>
+<meta name="description" content="창의적으로 AI 콘텐츠를 만드는 마케터 성혜정의 포트폴리오">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%2312264a'/%3E%3Ctext x='50' y='68' font-size='56' font-weight='800' text-anchor='middle' fill='%232ec4a6'%3E성%3C/text%3E%3C/svg%3E">
+<meta property="og:type" content="website">
+<meta property="og:title" content="성혜정의 포트폴리오">
+<meta property="og:description" content="창의적으로 AI 콘텐츠를 만드는 마케터">
+<meta name="theme-color" content="#12264a">
+<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+<style>
+:root{
+  --navy:#12264a;
+  --navy-soft:#3b4f73;
+  --mint:#2ec4a6;
+  --mint-deep:#13806a;
+  --mint-pale:#e6f8f4;
+  --white:#ffffff;
+  --bg-soft:#f5f8fb;
+  --line:#dde5ee;
+  --photo:#d9dde2;
+  --photo-text:#6b737d;
+  --radius:16px;
+  --wrap:1080px;
+  --header-h:64px;
+}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:var(--header-h)}
+body{
+  margin:0;
+  font-family:"Pretendard Variable",Pretendard,-apple-system,BlinkMacSystemFont,"Apple SD Gothic Neo","Malgun Gothic",system-ui,sans-serif;
+  color:var(--navy);
+  background:var(--white);
+  line-height:1.7;
+  letter-spacing:-0.01em;
+  word-break:keep-all;
+  -webkit-font-smoothing:antialiased;
+}
+a{color:inherit}
+img{max-width:100%}
+:focus-visible{outline:3px solid var(--mint);outline-offset:3px;border-radius:6px}
+.wrap{max-width:var(--wrap);margin:0 auto;padding:0 24px}
+section{padding:88px 0;scroll-margin-top:var(--header-h)}
+section.alt{background:var(--bg-soft)}
+h1,h2,h3,p{margin:0}
+h2{
+  font-size:clamp(1.6rem,3.2vw,2.1rem);
+  font-weight:800;
+  line-height:1.3;
+  letter-spacing:-0.03em;
+  margin-bottom:12px;
+}
+h2::after{
+  content:"";
+  display:block;
+  width:44px;height:5px;
+  background:var(--mint);
+  border-radius:3px;
+  margin-top:14px;
+}
+.lead{color:var(--navy-soft);margin-bottom:40px;max-width:62ch}
+
+/* 상단 메뉴 */
+header{
+  position:fixed;top:0;left:0;right:0;
+  height:var(--header-h);
+  background:rgba(255,255,255,.94);
+  backdrop-filter:saturate(180%) blur(10px);
+  -webkit-backdrop-filter:saturate(180%) blur(10px);
+  border-bottom:1px solid var(--line);
+  z-index:100;
+}
+.nav{
+  max-width:var(--wrap);height:100%;margin:0 auto;padding:0 24px;
+  display:flex;align-items:center;justify-content:space-between;
+}
+.logo{font-weight:800;text-decoration:none;font-size:1.05rem;letter-spacing:-0.02em}
+.logo b{color:var(--mint-deep)}
+.menu{display:flex;gap:4px;list-style:none;margin:0;padding:0}
+.menu a{
+  display:block;padding:8px 12px;border-radius:999px;
+  text-decoration:none;font-size:.92rem;font-weight:600;color:var(--navy-soft);
+  transition:background .2s,color .2s;
+}
+.menu a:hover{background:var(--mint-pale);color:var(--navy)}
+.menu a.active{background:var(--navy);color:var(--white)}
+.burger{
+  display:none;width:44px;height:44px;border:0;background:transparent;cursor:pointer;
+  border-radius:10px;padding:0;
+}
+.burger span{display:block;width:22px;height:2px;background:var(--navy);margin:5px auto;transition:transform .25s,opacity .25s}
+.burger[aria-expanded="true"] span:nth-child(1){transform:translateY(7px) rotate(45deg)}
+.burger[aria-expanded="true"] span:nth-child(2){opacity:0}
+.burger[aria-expanded="true"] span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
+
+/* 상단 소개 */
+.hero{
+  padding:calc(var(--header-h) + 88px) 0 96px;
+  background:
+    radial-gradient(circle at 88% 12%,var(--mint-pale) 0,transparent 42%),
+    var(--white);
+}
+.hero-tags{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:28px}
+.tag{
+  display:inline-block;padding:6px 14px;border-radius:999px;
+  background:var(--mint-pale);color:var(--mint-deep);
+  font-size:.88rem;font-weight:700;
+}
+.hero h1{
+  font-size:clamp(2.2rem,6.4vw,4.4rem);
+  font-weight:800;
+  line-height:1.2;
+  letter-spacing:-0.04em;
+  max-width:14em;
+}
+.hero h1 em{font-style:normal;background:linear-gradient(transparent 62%,rgba(46,196,166,.4) 62%)}
+.hero-name{margin-top:28px;font-size:1.1rem;color:var(--navy-soft);font-weight:600}
+.btn-row{display:flex;flex-wrap:wrap;gap:12px;margin-top:36px}
+.btn{
+  display:inline-block;padding:14px 26px;border-radius:999px;
+  font-weight:700;text-decoration:none;font-size:1rem;
+  border:2px solid var(--navy);transition:background .2s,color .2s,transform .2s;
+}
+.btn.primary{background:var(--navy);color:var(--white)}
+.btn.primary:hover{background:var(--mint-deep);border-color:var(--mint-deep)}
+.btn.ghost{background:transparent;color:var(--navy)}
+.btn.ghost:hover{background:var(--navy);color:var(--white)}
+
+/* 사진 자리 */
+.photo{
+  background:var(--photo);color:var(--photo-text);
+  display:flex;align-items:center;justify-content:center;
+  font-weight:700;font-size:1.1rem;letter-spacing:.2em;
+  border-radius:var(--radius);
+  aspect-ratio:4/5;width:100%;
+}
+
+/* 나의 이야기 */
+.story{display:grid;grid-template-columns:280px 1fr;gap:48px;align-items:start}
+.profile-card{
+  margin-top:16px;padding:16px 18px;border:1px solid var(--line);border-radius:12px;background:var(--white);
+}
+.profile-card dl{margin:0;display:grid;grid-template-columns:auto 1fr;gap:6px 14px}
+.profile-card dt{color:var(--navy-soft);font-weight:600}
+.profile-card dd{margin:0;font-weight:700}
+.story-text p{font-size:1.06rem;margin-bottom:28px}
+.story-text .gap{
+  background:var(--mint-pale);border-left:5px solid var(--mint);
+  padding:16px 20px;border-radius:0 12px 12px 0;margin-bottom:28px;
+}
+.story-text .gap strong{display:block;color:var(--mint-deep);margin-bottom:4px}
+.sub{font-size:1.05rem;font-weight:800;margin:36px 0 14px}
+.career{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;list-style:none;padding:0;margin:0}
+.career li{
+  background:var(--white);border:1px solid var(--line);border-radius:12px;padding:12px 14px;
+}
+.career b{display:block;font-size:.98rem}
+.career span{font-size:.86rem;color:var(--navy-soft)}
+.notes{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:28px}
+.note{background:var(--bg-soft);border-radius:var(--radius);padding:20px}
+.note h3{font-size:1rem;margin-bottom:8px;color:var(--mint-deep)}
+.note p{font-size:.94rem;margin:0;color:var(--navy-soft)}
+.link-table{width:100%;border-collapse:collapse;margin-top:8px;font-size:.95rem;background:var(--white);border-radius:12px;overflow:hidden}
+.link-table th,.link-table td{padding:12px 16px;text-align:left;border-bottom:1px solid var(--line);vertical-align:top}
+.link-table th{background:var(--navy);color:var(--white);font-weight:700}
+.link-table tr:last-child td{border-bottom:0}
+.table-scroll{overflow-x:auto;-webkit-overflow-scrolling:touch}
+
+/* 핵심 역량 */
+.cards3{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.skill{
+  background:var(--white);border:1px solid var(--line);border-radius:var(--radius);
+  padding:28px 26px;border-top:6px solid var(--mint);
+}
+.skill .icon{font-size:2rem;line-height:1;margin-bottom:14px}
+.skill h3{font-size:1.2rem;font-weight:800;margin-bottom:12px;letter-spacing:-0.02em}
+.skill p{color:var(--navy-soft);font-size:.98rem}
+.skill p b{color:var(--navy)}
+
+/* 프로젝트 */
+.project{
+  background:var(--white);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;
+}
+.project-head{background:var(--navy);color:var(--white);padding:32px 32px 28px}
+.project-head .badge{
+  display:inline-block;background:var(--mint);color:var(--navy);
+  font-weight:800;font-size:.82rem;padding:4px 12px;border-radius:999px;margin-bottom:14px;
+}
+.project-head h3{font-size:clamp(1.3rem,3vw,1.7rem);font-weight:800;margin-bottom:10px}
+.project-head p{color:#cdd8ea}
+.project-body{display:grid;grid-template-columns:repeat(2,1fr);gap:0}
+.pbox{padding:26px 32px;border-top:1px solid var(--line)}
+.pbox:nth-child(odd){border-right:1px solid var(--line)}
+.pbox h4{margin:0 0 10px;font-size:1rem;color:var(--mint-deep);font-weight:800}
+.pbox p,.pbox li{font-size:.97rem;color:var(--navy-soft)}
+.pbox ul{margin:0;padding-left:20px}
+.pbox .full{color:var(--navy)}
+.pbox.wide{grid-column:1 / -1;border-right:0}
+.results{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin:0 0 14px;padding:0;list-style:none}
+.results li{background:var(--mint-pale);border-radius:12px;padding:14px;text-align:center}
+.results b{display:block;color:var(--navy);font-size:1.02rem}
+
+/* 사용 도구 */
+.tools{display:flex;flex-wrap:wrap;gap:14px}
+.tool{
+  background:var(--white);border:1px solid var(--line);border-radius:14px;
+  padding:18px 28px;font-weight:800;font-size:1.1rem;
+  display:flex;align-items:center;gap:10px;
+}
+.tool::before{content:"";width:12px;height:12px;border-radius:50%;background:var(--mint)}
+.tool-note{margin-top:16px;color:var(--navy-soft);font-size:.95rem}
+
+/* 앞으로의 목표 */
+.goal-chips{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-bottom:20px}
+.goal-chip{
+  background:var(--navy);color:var(--white);border-radius:var(--radius);
+  padding:22px;font-weight:800;font-size:1.1rem;text-align:center;
+}
+.goal-chip small{display:block;font-weight:500;color:#cdd8ea;font-size:.85rem;margin-bottom:4px}
+.goal-boxes{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
+.goal-box{background:var(--white);border:1px solid var(--line);border-radius:var(--radius);padding:26px}
+.goal-box h3{font-size:1.05rem;color:var(--mint-deep);margin-bottom:10px}
+.goal-box p{color:var(--navy-soft);font-size:.98rem}
+
+/* 연락처 */
+.contact-list{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;list-style:none;margin:0;padding:0}
+.contact-list a{
+  display:flex;align-items:center;justify-content:space-between;gap:12px;
+  padding:20px 24px;background:var(--white);border:1px solid var(--line);border-radius:14px;
+  text-decoration:none;font-weight:700;transition:border-color .2s,background .2s;
+}
+.contact-list a:hover{border-color:var(--mint);background:var(--mint-pale)}
+.contact-list small{display:block;font-weight:500;color:var(--navy-soft);font-size:.85rem;overflow-wrap:anywhere}
+.contact-list .go{color:var(--mint-deep);font-size:1.3rem}
+
+footer{background:var(--navy);color:#cdd8ea;text-align:center;padding:28px 24px;font-size:.9rem}
+
+/* 태블릿 */
+@media (max-width:960px){
+  section{padding:72px 0}
+  .story{grid-template-columns:220px 1fr;gap:32px}
+  .cards3{grid-template-columns:1fr}
+  .career,.notes{grid-template-columns:repeat(2,1fr)}
+  .notes .note:last-child{grid-column:1 / -1}
+  .menu a{padding:8px 9px;font-size:.88rem}
+}
+/* 휴대폰 */
+@media (max-width:720px){
+  :root{--header-h:60px}
+  .wrap,.nav{padding:0 20px}
+  section{padding:60px 0}
+  .burger{display:block}
+  .menu{
+    position:absolute;top:var(--header-h);left:0;right:0;
+    flex-direction:column;gap:0;background:var(--white);
+    border-bottom:1px solid var(--line);padding:8px 12px 14px;
+    display:none;
+  }
+  .menu.open{display:flex}
+  .menu a{padding:14px 12px;font-size:1rem;border-radius:10px}
+  .hero{padding:calc(var(--header-h) + 56px) 0 64px}
+  .story{grid-template-columns:1fr}
+  .photo{max-width:260px}
+  .career,.notes,.goal-chips,.goal-boxes,.contact-list{grid-template-columns:1fr}
+  .notes .note:last-child{grid-column:auto}
+  .project-body{grid-template-columns:1fr}
+  .pbox,.pbox:nth-child(odd){border-right:0;padding:22px 22px}
+  .project-head{padding:26px 22px}
+  .results{grid-template-columns:repeat(2,1fr)}
+  .btn{width:100%;text-align:center}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *{transition:none !important}
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="nav">
+    <a class="logo" href="#top" data-scroll>성혜정<b>.</b></a>
+    <button class="burger" type="button" aria-label="메뉴 열기" aria-expanded="false" aria-controls="menu">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="menu" id="menu">
+      <li><a href="#story" data-scroll>나의 이야기</a></li>
+      <li><a href="#skills" data-scroll>핵심 역량</a></li>
+      <li><a href="#project" data-scroll>프로젝트</a></li>
+      <li><a href="#tools" data-scroll>사용 도구</a></li>
+      <li><a href="#goal" data-scroll>앞으로의 목표</a></li>
+      <li><a href="#contact" data-scroll>연락처</a></li>
+    </ul>
+  </div>
+</header>
+
+<main>
+  <!-- 상단 소개 -->
+  <section class="hero" id="top">
+    <div class="wrap">
+      <div class="hero-tags">
+        <span class="tag">디지털 마케터</span>
+        <span class="tag">AI 콘텐츠</span>
+        <span class="tag">경기도</span>
+      </div>
+      <h1><em>창의적으로</em> AI 콘텐츠를 만드는 마케터</h1>
+      <p class="hero-name">성혜정의 포트폴리오</p>
+      <div class="btn-row">
+        <a class="btn primary" href="#project" data-scroll>프로젝트 보기</a>
+        <a class="btn ghost" href="#contact" data-scroll>연락하기</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 나의 이야기 -->
+  <section class="alt" id="story">
+    <div class="wrap">
+      <h2>나의 이야기</h2>
+      <p class="lead">다양한 일을 해 온 경험과, 10년 동안 스스로 배운 시간을 마케터의 힘으로 이어가려 합니다.</p>
+      <div class="story">
+        <div>
+          <div class="photo" role="img" aria-label="사진 자리">사진</div>
+          <div class="profile-card">
+            <dl>
+              <dt>이름</dt><dd>성혜정</dd>
+              <dt>지역</dt><dd>경기도</dd>
+            </dl>
+          </div>
+        </div>
+        <div class="story-text">
+          <p>10년 동안 저는 자격증 공부와 자기계발, 개인 투자를 하며 시간을 보냈습니다. 관심 있는 분야와 필요한 분야를 미리 알아보고 날짜를 계획해서, 공백 없이 공부를 이어왔습니다. 그 과정에서 혼자서 능동적으로 알아보는 힘이 생겼고, 다시 일해보고 싶은 마음도 커졌습니다. 지금보다 더 나은 삶을 살고 싶다는 의지로, 이제 디지털 마케터로서 새로운 시작을 해보려 합니다.</p>
+          <div class="gap">
+            <strong>공백기 한 줄 설명</strong>
+            10년 동안 자격증 공부와 자기계발, 개인 투자에 꾸준히 시간을 쓰며 스스로 배우고 성장해 온 시간
+          </div>
+
+          <h3 class="sub">이전 경력</h3>
+          <ul class="career">
+            <li><b>인사·총무</b><span>채용 관리, 면접</span></li>
+            <li><b>사무직</b><span>사무</span></li>
+            <li><b>KT고객센터</b><span>상담원</span></li>
+            <li><b>병원 피부관리사</b><span>피부관리</span></li>
+            <li><b>수제 주얼리 제작·판매</b><span>디자인 제작</span></li>
+            <li><b>학습지 교사</b><span>학생관리</span></li>
+            <li><b>주식 선물투자</b><span>매매</span></li>
+            <li><b>베이커리 카페</b><span>바리스타 및 판매</span></li>
+            <li><b>숏폼 제작</b><span>동영상 제작, 인스타 셋팅</span></li>
+          </ul>
+
+          <div class="notes">
+            <div class="note">
+              <h3>대표 경험</h3>
+              <p>일하면서 성실하고 책임감이 강하다는 칭찬을 받았습니다. 고객과 거래처를 정직하게 대하며 신뢰를 쌓았습니다.</p>
+            </div>
+            <div class="note">
+              <h3>주변의 평가</h3>
+              <p>함께 일한 사람들에게 "아이디어가 좋다", "진중하다", "침착하다"는 말을 자주 들었습니다.</p>
+            </div>
+            <div class="note">
+              <h3>참여 동기</h3>
+              <p>시대에 뒤처지지 않고 살고 싶어서 이 과정에 참여하게 되었습니다. AI 관련 일을 해보고 싶다는 마음도 있었습니다.</p>
+            </div>
+          </div>
+
+          <h3 class="sub">경험 → 마케터 역량 연결</h3>
+          <div class="table-scroll">
+            <table class="link-table">
+              <thead>
+                <tr><th>내 경험</th><th>연결되는 마케터 역량</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>관심 분야와 필요 분야를 미리 알아보고 날짜를 계획해, 공백 없이 자격증 공부를 이어감</td>
+                  <td>목표 설정 및 일정 관리, 캠페인 기획·실행력</td>
+                </tr>
+                <tr>
+                  <td>인터넷 정보를 직접 찾아 공부하고 경험으로 연결함</td>
+                  <td>시장·트렌드 조사, 자료 탐색 및 정보 선별 능력</td>
+                </tr>
+                <tr>
+                  <td>유튜브 영상으로 학습하고, 국가 지원 프로그램을 찾아 활용함</td>
+                  <td>디지털 채널 활용 능력, 새로운 도구와 플랫폼에 대한 빠른 적응력</td>
+                </tr>
+                <tr>
+                  <td>개인 투자를 하며 정보를 알아보고 스스로 판단함</td>
+                  <td>데이터와 정보를 바탕으로 한 의사결정, 자기 주도적 문제 해결력</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 핵심 역량 -->
+  <section id="skills">
+    <div class="wrap">
+      <h2>핵심 역량</h2>
+      <p class="lead">경험에서 얻은 세 가지 힘입니다.</p>
+      <div class="cards3">
+        <article class="skill">
+          <div class="icon" aria-hidden="true">🔎</div>
+          <h3>스스로 찾아 배우는 힘</h3>
+          <p>인터넷과 유튜브로 필요한 정보를 <b>직접 찾아 공부</b>하고, 국가 지원 프로그램도 찾아 활용해 왔습니다. 누가 알려주지 않아도 <b>스스로 배우는 습관</b>이 있어 새로운 도구와 채널도 빠르게 익힙니다.</p>
+        </article>
+        <article class="skill">
+          <div class="icon" aria-hidden="true">🤖</div>
+          <h3>AI로 홍보 콘텐츠 만드는 힘</h3>
+          <p>로로망고 양말 프로젝트에서 ChatGPT와 제미나이로 <b>블로그 글 4편, 릴스 1편, 카드뉴스 1편</b>을 만들었습니다. AI 결과물이 브랜드 분위기와 다를 때는 <b>여러 번 고쳐 가며 요청 문구를 다듬는 법</b>을 익혔습니다.</p>
+        </article>
+        <article class="skill">
+          <div class="icon" aria-hidden="true">🤝</div>
+          <h3>믿음을 주는 태도</h3>
+          <p>일하면서 <b>성실하고 책임감이 강하다</b>는 칭찬을 받았고, 고객과 거래처를 <b>정직하게 대하며 신뢰를 쌓았습니다</b>. 함께 일한 사람들에게 "진중하다", "침착하다"는 말도 자주 들었습니다.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 프로젝트 -->
+  <section class="alt" id="project">
+    <div class="wrap">
+      <h2>프로젝트</h2>
+      <p class="lead">AI 도구로 브랜드 홍보 콘텐츠를 만든 팀 프로젝트입니다.</p>
+      <article class="project">
+        <div class="project-head">
+          <span class="badge">🧦 팀 프로젝트</span>
+          <h3>로로망고 양말 홍보 콘텐츠 만들기</h3>
+          <p>로로망고 양말 브랜드의 제품 정보를 알리기 위해 블로그, 인스타그램 릴스, 카드뉴스 등 다양한 홍보 콘텐츠를 AI 도구로 제작한 프로젝트</p>
+        </div>
+        <div class="project-body">
+          <div class="pbox">
+            <h4>기간 / 형태</h4>
+            <p>팀 프로젝트 (콘텐츠 제작 및 영상 촬영 담당)</p>
+          </div>
+          <div class="pbox">
+            <h4>목표</h4>
+            <p>로로망고 양말 브랜드의 20~30대 고객에게 제품 정보를 알리고, 인스타그램과 블로그를 통해 확산하는 것</p>
+          </div>
+          <div class="pbox">
+            <h4>내가 한 일</h4>
+            <ul>
+              <li>블로그 글 작성 및 인스타그램 소개글 작성</li>
+              <li>인스타그램 게시물 공동 작업 및 영상 촬영</li>
+              <li>카드뉴스에 들어갈 이미지 생성</li>
+            </ul>
+          </div>
+          <div class="pbox">
+            <h4>사용 도구</h4>
+            <p>ChatGPT, 제미나이</p>
+          </div>
+          <div class="pbox wide">
+            <h4>결과</h4>
+            <ul class="results">
+              <li><b>블로그 글 4편</b></li>
+              <li><b>인스타그램 릴스 1편</b></li>
+              <li><b>카드뉴스 1편</b></li>
+              <li><b>인스타그램 새 계정 목업 제안</b></li>
+            </ul>
+            <p>강사님과 로로망고 사장님, 동료에게 좋은 피드백을 받았습니다.</p>
+          </div>
+          <div class="pbox wide">
+            <h4>배운 점</h4>
+            <p class="full">AI가 만든 문구와 이미지가 브랜드 분위기와 다를 때 여러 번 수정하며 <b>프롬프트를 다듬는 법</b>을 익혔고, 숏폼 제작을 통해 <b>트렌드를 읽고 반영하는 일</b>과 문구·이미지·영상의 <b>디테일을 살리는 일</b>이 중요하고도 어렵다는 것을 배웠습니다.</p>
+          </div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- 사용 도구 -->
+  <section id="tools">
+    <div class="wrap">
+      <h2>사용 도구</h2>
+      <p class="lead">프로젝트에서 직접 사용한 AI 도구입니다.</p>
+      <div class="tools">
+        <div class="tool">ChatGPT</div>
+        <div class="tool">제미나이</div>
+      </div>
+      <p class="tool-note">글과 이미지를 만든 뒤, 브랜드 분위기에 맞게 여러 번 다듬어 사용했습니다.</p>
+    </div>
+  </section>
+
+  <!-- 앞으로의 목표 -->
+  <section class="alt" id="goal">
+    <div class="wrap">
+      <h2>앞으로의 목표</h2>
+      <p class="lead">한 가지로 정하기보다 여러 시도를 해보며 나에게 맞는 일을 찾아가고 싶습니다.</p>
+      <div class="goal-chips">
+        <div class="goal-chip"><small>희망하는 일</small>🏢 회사 취업</div>
+        <div class="goal-chip"><small>희망하는 일</small>💻 프리랜서</div>
+        <div class="goal-chip"><small>희망하는 일</small>🏠 재택 부업</div>
+      </div>
+      <div class="goal-boxes">
+        <div class="goal-box">
+          <h3>🔭 1년 뒤 나의 모습</h3>
+          <p>회사 팀원으로 안정적으로 자리 잡거나, 프리랜서로 꾸준히 의뢰를 받거나, 재택 부업으로 추가 수입을 만드는 모습을 그리고 있습니다. 한 가지로 정하기보다 여러 시도를 해보며 나에게 맞는 일을 찾아가고 싶습니다.</p>
+        </div>
+        <div class="goal-box">
+          <h3>🛠️ 일하는 방식</h3>
+          <p>맡은 일은 끝까지 해내는 책임감과 상대와 편하게 주고받는 소통을 중요하게 생각합니다. 작은 부분까지 챙기는 꼼꼼함과 천천히라도 계속 이어가는 꾸준함으로 일합니다.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 연락처 -->
+  <section id="contact">
+    <div class="wrap">
+      <h2>연락처</h2>
+      <p class="lead">편하게 연락 주세요.</p>
+      <ul class="contact-list">
+        <li>
+          <a href="mailto:shyradix3@naver.com">
+            <span>✉️ 이메일<small>shyradix3@naver.com</small></span>
+            <span class="go" aria-hidden="true">→</span>
+          </a>
+        </li>
+        <li>
+          <a href="https://open.kakao.com/o/sm7m3eOi" target="_blank" rel="noopener noreferrer">
+            <span>💬 오픈채팅<small>카카오톡 오픈채팅</small></span>
+            <span class="go" aria-hidden="true">→</span>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.instagram.com/shortform.doctor" target="_blank" rel="noopener noreferrer">
+            <span>📸 인스타그램<small>@shortform.doctor</small></span>
+            <span class="go" aria-hidden="true">→</span>
+          </a>
+        </li>
+        <li>
+          <a href="https://blog.naver.com/shyradix3" target="_blank" rel="noopener noreferrer">
+            <span>📝 블로그<small>blog.naver.com/shyradix3</small></span>
+            <span class="go" aria-hidden="true">→</span>
+          </a>
+        </li>
+        <li>
+          <a href="https://shortform-doctor-studio.vercel.app/" target="_blank" rel="noopener noreferrer">
+            <span>💊 숏폼닥터<small>당신의 브랜드에 맞는 숏폼 처방</small></span>
+            <span class="go" aria-hidden="true">→</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </section>
+</main>
+
+<footer>© 성혜정 · 디지털 마케터 포트폴리오</footer>
+
+<script>
+(function(){
+  var header = document.querySelector('header');
+  var burger = document.querySelector('.burger');
+  var menu = document.getElementById('menu');
+  var links = Array.prototype.slice.call(document.querySelectorAll('.menu a'));
+  var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  function closeMenu(){
+    menu.classList.remove('open');
+    burger.setAttribute('aria-expanded','false');
+    burger.setAttribute('aria-label','메뉴 열기');
+  }
+
+  burger.addEventListener('click', function(){
+    var open = menu.classList.toggle('open');
+    burger.setAttribute('aria-expanded', open ? 'true' : 'false');
+    burger.setAttribute('aria-label', open ? '메뉴 닫기' : '메뉴 열기');
+  });
+
+  // 메뉴 클릭 시 부드럽게 이동
+  document.querySelectorAll('[data-scroll]').forEach(function(a){
+    a.addEventListener('click', function(e){
+      var id = a.getAttribute('href');
+      var target = document.querySelector(id);
+      if(!target) return;
+      e.preventDefault();
+      var y = id === '#top' ? 0 : target.getBoundingClientRect().top + window.pageYOffset - header.offsetHeight + 1;
+      window.scrollTo({top:y, behavior: reduce ? 'auto' : 'smooth'});
+      if(history.replaceState){ history.replaceState(null,'',id); }
+      closeMenu();
+    });
+  });
+
+  // 현재 위치 메뉴 표시
+  var sections = links.map(function(a){ return document.querySelector(a.getAttribute('href')); });
+  function setActive(){
+    var pos = window.pageYOffset + header.offsetHeight + 80;
+    var current = -1;
+    sections.forEach(function(s,i){ if(s && s.offsetTop <= pos){ current = i; } });
+    links.forEach(function(a,i){
+      if(i === current){ a.classList.add('active'); a.setAttribute('aria-current','true'); }
+      else { a.classList.remove('active'); a.removeAttribute('aria-current'); }
+    });
+  }
+  window.addEventListener('scroll', setActive, {passive:true});
+  window.addEventListener('resize', function(){ if(window.innerWidth > 720){ closeMenu(); } setActive(); });
+  document.addEventListener('keydown', function(e){ if(e.key === 'Escape'){ closeMenu(); } });
+  setActive();
+})();
+</script>
+</body>
+</html>
